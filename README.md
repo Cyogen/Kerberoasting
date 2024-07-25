@@ -19,10 +19,11 @@ Kerberos uses Service Principal Names (SPNs) to link service instances to logon 
 - Kali Linux
 - Rubeus
 - Hashcat
+- Event Viewer
+- 
 
 ## Exploit
 
-I have abandoned this basic setup after upgrading hardware. 
-Please refer to Homelab 2.0 for the goodies.
+
 
 ## Defending
