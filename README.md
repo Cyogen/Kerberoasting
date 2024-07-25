@@ -20,7 +20,6 @@ Kerberos uses Service Principal Names (SPNs) to link service instances to logon 
 - Rubeus
 - Hashcat
 - Event Viewer
-- 
 
 ## Exploit
 
