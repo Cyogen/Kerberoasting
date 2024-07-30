@@ -26,8 +26,8 @@ Kerberos uses Service Principal Names (SPNs) to link service instances to logon 
   ```
   Rubeus.exe kerberoast /outfile:spn.txt
   ```
-  INSERT SCREEN SHOT
-  
+  ![image](https://github.com/user-attachments/assets/a1dd7db9-d75c-4c1c-89d8-73fc78928428)
+
 Once the tickets are obtained then it's time to crack them.  We can use two tools for this:
   - Hashcat
   - JackTheRipper
@@ -39,7 +39,7 @@ Once the tickets are obtained then it's time to crack them.  We can use two tool
   ```--force``` may be necessary.
   
   Once Hashcat finishes cracking, the output will show the password in plain text:
-  INSERT SCREENSHOT
+  
 
 #### John The Ripper
   Captured TGS hashes can be cracked just the same:
