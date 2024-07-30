@@ -43,8 +43,22 @@ Once the tickets are obtained then it's time to crack them.  We can use two tool
 
 #### John The Ripper
   Captured TGS hashes can be cracked just the same:
-  ``` sudo john spn.txt --fork=4 --format=krb5tgs --wordlist=passwords.txt --pot=results.pot```
+  ```
+  sudo john spn.txt --fork=4 --format=krb5tgs --wordlist=passwords.txt --pot=results.pot
+  ```
   INSERT SCREENSHOT
 
   
 ## Defending
+
+  - Limits SPN usage and disable those no longer needed/used.
+  - Strong passwords are required (100+ characters)
+  - Use Group Managed Service Accounts (GMSA) whenever possible.
+
+## Detection
+
+  -  Event ID 4769 should return the following useful information:
+    ![image](https://github.com/user-attachments/assets/61991542-10d9-4dbd-91c8-242504c342db)
+  - A honeypot account 2+ years old with a difficult to break password is a perfect detection option in an AD environment.
+  - Assign some privs to make the account interesting and must have an SPn registered.
+  - ANY activity in this account, successful or not, is suspicious and should be alerted. 
