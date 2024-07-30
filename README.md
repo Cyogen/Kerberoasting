@@ -39,6 +39,9 @@ Once the tickets are obtained then it's time to crack them.  We can use two tool
   ```--force``` may be necessary.
   
   Once Hashcat finishes cracking, the output will show the password in plain text:
+
+![image](https://github.com/user-attachments/assets/08612ccd-b5d7-4c6b-a162-60c66bbc61b7)
+
   
 
 #### John The Ripper
@@ -46,9 +49,7 @@ Once the tickets are obtained then it's time to crack them.  We can use two tool
   ```
   sudo john spn.txt --fork=4 --format=krb5tgs --wordlist=passwords.txt --pot=results.pot
   ```
-  INSERT SCREENSHOT
 
-  
 ## Defending
 
   - Limits SPN usage and disable those no longer needed/used.
